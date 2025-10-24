@@ -1,0 +1,686 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container>div {
+            font-size: 60px;
+            min-height: auto;
+            /* outline: 3px solid rgb(10, 28, 226); */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        .navbar {
+            background-color: #a72222;
+            grid-column: 1/11;
+            padding: 20px;
+            font-style: 'Istok Web';
+            list-style: none;
+        
+            ul {
+                color: white;
+                border-radius: 40px;
+                padding: 20px;
+                float: right;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            /* li:nth-child(1) {
+                position: absolute;
+                left: 0;
+            } */
+
+            li {
+                color: white;
+                padding-inline: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                
+            }
+            ul li a{
+                color: white;
+            }
+
+            #logo:hover {
+                background-color: rgb(208, 255, 1);
+                color: black;
+                /* font-size: 3rem;
+                transform: scale(2.1); */
+            }
+
+            #logo {
+                padding: 15px;
+                position: absolute;
+                left: 0;
+                border-radius: 40px;
+                color: white;
+                transition: 0.4s ease-in-out;
+                font-size: auto;
+                font-weight: 700;
+            }
+            #menu{
+                display: none;
+                color: white;
+                    background-color: rgb(191, 5, 228);
+                    padding: 5px;
+                    border-radius: 10px;
+            }
+        }
+
+        .image-section {
+            background-color: #BFB9B9;
+            grid-column: 1/4;
+            text-align: center;
+            
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 90%;
+                transition: .3s ease-in-out;
+                object-fit: fill;
+            }
+            img:hover{
+                transform: rotate(75deg);
+            }
+        }
+
+        .text-section {
+            background-color: #BFB9B9;
+            font-style: 'Grandstander';
+            grid-column: 4/11;
+            display: grid;
+            place-content: center;
+            
+            
+            ul {
+                display: block;
+                list-style: none;
+                padding-inline-start: 40px;
+                unicode-bidi: isolate;
+            }
+
+            li:nth-child(1) {
+                font-size: 4rem;
+            }
+
+            li:nth-child(2) {
+                font-size: 2.5rem;
+                font-family: 'Grandstander';
+            }
+        }
+
+        .footer {
+            background-color: #BFB9B9;
+            grid-column: 1/11;
+            height: 50vh;
+        }
+        @media only screen and (max-width: 1500px) {
+
+            .navbar {
+                   color: white;
+                   background-color: #a72222;
+                ul {
+                    color: white;
+                    padding: 20px;
+                    float: right;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                }
+                a {
+                    color: white;
+                    font-size: 1.5rem;
+                }
+                ul li a{
+                    font-size: 3rem;
+                }
+            }
+            #logo{
+                font-size: 3rem;
+            }
+
+            .image-section {
+                background-color: #BFB9B9;
+                grid-column: 1/4;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            .text-section {
+                background-color: #BFB9B9;
+                grid-column: 4/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 3rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                }
+            }
+        
+        }
+         @media only screen and (max-width: 1000px) {
+
+            .navbar {
+                   background-color: rgb(93, 22, 151);
+                ul {
+                    display: none;
+                }
+                #menu {
+                    display: block;
+                    font-size: 50px;
+                    float: right;
+                }
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+            #logo{
+                font-size: 3.2rem;
+            }
+
+            .image-section {
+                grid-column: 1/5;
+
+                img {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                display: center;
+                grid-column: 5/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2.3rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+         @media only screen and (max-width: 900px) {
+
+            .navbar {
+                   background-color: rgb(232, 15, 66);
+                 ul {
+                    display: none;
+                }
+                #menu {
+                    display: block;
+                    font-size: 50px;
+                    float: right;
+                }
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+             #logo{
+                font-size: 3.2rem;
+            }
+
+            .image-section {
+                grid-column: 1/11;
+
+                img {
+                    width: 40%;
+                    height: 75%;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2.5rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+        @media only screen and (max-width: 800px) {
+
+            .navbar {
+                   background-color: rgb(238, 67, 107);
+                ul {
+                    display: none;
+                }
+                #menu {
+                    display: block;
+                    font-size: 50px;
+                    float: right;
+                }
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+             #logo{
+                font-size: 3.3rem;
+            }
+
+            .image-section {
+                grid-column: 1/11;
+
+                img {
+                    width: 40%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2.5rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+        @media only screen and (max-width: 750px) {
+
+            .navbar {
+                   background-color: rgb(141, 58, 108);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    font-size: 50px;
+                    float: right;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+                #logo{
+                font-size: 3.2rem;
+            }
+            .image-section {
+                grid-column: 1/11;
+
+                img {
+                    width: 40%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2.5rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+        @media only screen and (max-width: 700px) {
+
+            .navbar {
+                   background-color: rgb(66, 150, 75);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    font-size: 50px;
+                    float: right;
+                }
+
+                a {
+                    font-size: 2rem;
+                }
+            }
+
+            .image-section {
+                grid-column: 1/11;
+
+                img {
+                    width: 40%;
+                    height: 80%;
+                }
+            }
+             #logo{
+                font-size: 3.2rem;
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2.3rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.7rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+         @media only screen and (max-width: 660px) {
+
+            .navbar {
+                background-color: rgb(20, 150, 25);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                    font-size: 50px;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+            #logo{
+                font-size: 3.2rem;
+            }
+
+            .image-section {
+                grid-column: 1/11;
+
+                img {
+                    width: 50%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2.2rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.6rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+        @media only screen and (max-width: 600px) {
+
+            .navbar {
+                   background-color: rgb(210, 54, 26);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    font-size: 50px;
+                    float: right;
+                }
+
+                a {
+                    font-size: 3rem;
+                }
+            }
+            #logo{
+                font-size: 3.1rem;
+            }
+
+            .image-section {
+                grid-column: 1/11;
+                object-fit: cover;
+
+                img {
+                    width: 50%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 2rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.5rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .navbar {
+                background-color: rgb(183, 84, 66);
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                    font-size: 40px;
+                }
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+            #logo{
+                font-size: 3rem;
+            }
+
+            .image-section {
+                grid-column: 1/11;
+
+                img {
+                    width: 50%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                grid-column: 1/11;
+
+                li:nth-child(1) {
+                    font-family: monospace;
+                    font-size: 1.6rem;
+                }
+
+                li:nth-child(2) {
+                    font-size: 1.3rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            .navbar {
+                background-color: #620909;
+
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                    font-size: 40px;
+                }
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+            #logo{
+                font-size: 3rem;
+            }
+
+            .image-section {
+                background-color: #BFB9B9;
+                grid-column: 1/11;
+
+                img {
+                    width: 70%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                background-color: #BFB9B9;
+                grid-column: 1/11;
+                display: block;
+                font-style: 'Grandstander';
+
+                li:nth-child(1) {
+                    font-size: 1.5rem;
+                }
+
+                li:nth-child(2) {
+                    font-style: 'Grandstander';
+                    font-size: 1.2rem;
+                    padding-top: 10px;
+                }
+            }
+        }
+         @media only screen and (max-width: 365px) {
+
+            .navbar {
+                background-color: #a72222;
+
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                    font-size: 30px;
+                }
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+            #logo{
+                font-size: 2.5rem;
+            }
+
+            .image-section {
+                background-color: #BFB9B9;
+                grid-column: 1/11;
+
+                img {
+                    width: 70%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                background-color: #BFB9B9;
+                grid-column: 1/11;
+                display: block;
+                font-style: 'Grandstander';
+                li:nth-child(1) {
+                    font-size: 1.3rem;
+                }
+
+                li:nth-child(2) {
+                    font-style: 'Grandstander';
+                    font-size: 1rem;
+                    padding-top: 10px;
+                }
+            }
+        }
+        @media only screen and (max-width: 315px) {
+
+            .navbar {
+                background-color: #a72222;
+
+                ul {
+                    display: none;
+                }
+
+                #menu {
+                    display: block;
+                    float: right;
+                    font-size: 30px;
+                }
+
+                a {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                ul li a{
+                    font-size: 20px;
+                }
+            }
+            #logo{
+                font-size: 2rem;
+            }
+            .image-section {
+                background-color: #BFB9B9;
+                grid-column: 1/11;
+
+                img {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+
+            .text-section {
+                background-color: #BFB9B9;
+                grid-column: 1/11;
+                padding-top: none;
+
+                li:nth-child(1) {
+                    font-size: 1.2rem;
+                }
+
+                li:nth-child(2) {
+                    font-style: 'Grandstander';
+                    font-size: 1rem;
+                    
+                }
+            }
+        }
