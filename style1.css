@@ -3,8 +3,7 @@
             padding: 0;
         }
         body{
-            background: linear-gradient(to right top, #c01c21, #c9343a, #d04851, #d55b67, #d86d7c, #e5777e, #f1827f, #fc8d80, #ff9b68, #ffaf4c, #fac82e, #dce31b);
-        }
+           background: linear-gradient(to right top, #7976e6, #4896fb, #00b1ff, #00c9ff, #42dfff, #5be4e6, #80e5cd, #a4e5b9, #bed193, #d4ba7f, #e1a27f, #df8e8e);    }
 
         .grid-container>div {
             font-size: 60px;
@@ -54,7 +53,6 @@
             }
 
             #logo:hover {
-                background-color: rgb(208, 255, 1);
                 color: black;
                 /* font-size: 3rem;
                 transform: scale(2.1); */
@@ -101,6 +99,7 @@
             grid-column: 4/11;
             display: grid;
             place-content: center;
+            padding-right: 50px;
             
             
             ul {
@@ -115,6 +114,7 @@
             }
 
             li:nth-child(2) {
+                text-align: justify; 
                 font-size: 2.5rem;
                 font-family: 'Grandstander';
             }
@@ -140,7 +140,7 @@
             display: flex;
             flex-direction: column;
             align-items: start;
-            padding: 10px;
+            padding: 50px;
         }
         #responsive-nav a {
             text-decoration: none;
@@ -189,18 +189,19 @@
 
             .text-section {
                 grid-column: 4/11;
+                padding-top: 80px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                     font-family: sans-serif;
                 }
             }
-            #responsive-nav {
+             #responsive-nav {
                     display: none;
             }
 
@@ -213,11 +214,12 @@
                 a{
                     display: none;
                     }
-                a:hover {
+                a:hover{
                     display: block;
                     }
              }
-            }
+        
+        }
          @media only screen and (max-width: 1000px) {
 
             .navbar {
@@ -250,14 +252,15 @@
             .text-section {
                 display: center;
                 grid-column: 5/11;
+                padding-top: 70px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2.3rem;
+                    font-size: 1.7rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 2rem;
+                    font-size: 1.3rem;
                     font-family: sans-serif;
                 }
             }
@@ -278,8 +281,7 @@
                     display: flex;
                     }
              }
-            }
-
+        }
          @media only screen and (max-width: 900px) {
 
             .navbar {
@@ -311,14 +313,16 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 30px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2.5rem;
+                    font-size: 1.6rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 2rem;
+                    font-size: 1.3rem;
                     font-family: sans-serif;
                 }
             }
@@ -354,14 +358,16 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 30px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2.5rem;
+                    font-size: 1.8rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 2rem;
+                    font-size: 1.4rem;
                     font-family: sans-serif;
                 }
             }
@@ -398,14 +404,16 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 35px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2.5rem;
+                    font-size: 1.8rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 2rem;
+                    font-size: 1.4rem;
                     font-family: sans-serif;
                 }
             }
@@ -413,7 +421,7 @@
         @media only screen and (max-width: 700px) {
 
             .navbar {
-                   background-color: rgb(66, 150, 75);
+                   background-color: rgb(190, 201, 31);
                 ul {
                     display: none;
                 }
@@ -428,6 +436,7 @@
                     font-size: 2rem;
                 }
             }
+
             .image-section {
                 grid-column: 1/11;
 
@@ -442,14 +451,16 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 30px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2.3rem;
+                    font-size: 1.7rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 1.7rem;
+                    font-size: 1.4rem;
                     font-family: sans-serif;
                 }
             }
@@ -457,7 +468,7 @@
          @media only screen and (max-width: 660px) {
 
             .navbar {
-                background-color: rgb(20, 150, 25);
+                background-color: rgb(246, 214, 8);
                 ul {
                     display: none;
                 }
@@ -487,14 +498,16 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 30px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2.2rem;
+                    font-size: 1.6rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 1.6rem;
+                    font-size: 1.3rem;
                     font-family: sans-serif;
                 }
             }
@@ -533,14 +546,16 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 35px;
 
                 li:nth-child(1) {
                     font-family: monospace;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
 
                 li:nth-child(2) {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-family: sans-serif;
                 }
             }
@@ -579,6 +594,8 @@
 
             .text-section {
                 grid-column: 1/11;
+                padding-top: 0px;
+                padding-right: 30px;
 
                 li:nth-child(1) {
                     font-family: monospace;
@@ -628,14 +645,16 @@
                 grid-column: 1/11;
                 display: block;
                 font-style: 'Grandstander';
+                padding-top: 0px;
+                padding-right: 30px;
 
                 li:nth-child(1) {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
 
                 li:nth-child(2) {
                     font-style: 'Grandstander';
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     padding-top: 10px;
                 }
             }
@@ -676,6 +695,9 @@
                 grid-column: 1/11;
                 display: block;
                 font-style: 'Grandstander';
+                padding-top: 0px;
+                padding-right: 30px;
+                
                 li:nth-child(1) {
                     font-size: 1.3rem;
                 }
@@ -725,7 +747,8 @@
 
             .text-section {
                 grid-column: 1/11;
-                padding-top: none;
+                padding-top: 0px;
+                padding-right: 20px;
 
                 li:nth-child(1) {
                     font-size: 1.2rem;
